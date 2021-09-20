@@ -1,0 +1,38 @@
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  h3 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mobileHide {
+      display: none;
+    }
+  }
+
+  #footerLogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 20px;
+
+      .mobileHide {
+        display: inline;
+        margin-right: 4px;
+      }
+    }
+    #footerLogos {
+      font-size: 25px;
+    }
+  }
+}

@@ -1,27 +1,35 @@
-import './App.scss';
+import "./App.scss";
 
-
-import Navbar from './Components/Navbar/Navbar';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
+import { Navbar } from "./Components/Navbar/Navbar.jsx";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./Components/Home/Home.jsx";
+import { About } from "./Components/About/About.jsx";
+import { Footer } from "./Components/Footer/Footer.jsx";
+import { Projects } from "./Components/Projects/Projects.jsx";
+import { Resume } from "./Components/Resume/Resume.jsx"
 
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Navbar/>
-      <Switch>
-        <Route path="/">
-
-        </Route>
-        {/* <Route path="*" component={NotFound} /> */}
-      </Switch>
-    </Router>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+          {/* <Route path="*" component={NotFound} /> */}
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

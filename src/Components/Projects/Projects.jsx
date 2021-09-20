@@ -1,11 +1,9 @@
 import "./Projects"
 
-const Projects = () => {
+export const Projects = () => {
     return ( 
         <section id="Projects">
-
+            <h2>Projects</h2>
         </section>
      );
 }
- 
-export default Projects;
