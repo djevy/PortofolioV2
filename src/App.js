@@ -6,28 +6,30 @@ import { Home } from "./Components/Home/Home.jsx";
 import { About } from "./Components/About/About.jsx";
 import { Footer } from "./Components/Footer/Footer.jsx";
 import { Projects } from "./Components/Projects/Projects.jsx";
-import { Resume } from "./Components/Resume/Resume.jsx"
+import { Resume } from "./Components/Resume/Resume.jsx";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-          {/* <Route path="*" component={NotFound} /> */}
-        </Switch>
+        <div id="layout">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+            {/* <Route path="*" component={NotFound} /> */}
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </div>
