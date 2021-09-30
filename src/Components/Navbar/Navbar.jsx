@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
@@ -12,10 +12,32 @@ export const Navbar = () => {
     setNavbarOpen(false);
   };
 
+  let listener = null
+  const [scrollState, setScrollState] = useState("top")
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 50) {
+        if (scrollState !== "amir") {
+          setScrollState("amir")
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top")
+        }
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollState])
+
   return (
     <section id="navbar">
       <div id="mobile">
-        <nav className="navBar">
+      {/* <div id="mobile"> */}
+        <nav className="navBar" style={{backgroundColor: scrollState === "top" ? "black" : "rgb(19, 19, 19)"}}>
           <div id="logo">
             <Link to="/" className="Link">
               <h1>DE</h1>
