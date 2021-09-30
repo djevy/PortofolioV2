@@ -7,11 +7,15 @@
     .navBar {
       position: relative;
       height: 70px;
+      display: flex;
+      align-items: center;
+
       h1 {
         color: #fff;
+        margin: auto;
+        margin-left: 50px;
       }
     }
-    
 
     .navBar button {
       position: fixed;

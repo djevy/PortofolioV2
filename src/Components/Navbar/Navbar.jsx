@@ -29,12 +29,7 @@ export const Navbar = () => {
             )}
           </button>
           <div className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-            <Link
-              to="/"
-              activeClassName="active-link"
-              onClick={() => closeMenu()}
-              exact
-            >
+            <Link to="/" onClick={() => closeMenu()}>
               Home
             </Link>
             <Link to="/about" className="Link" onClick={() => closeMenu()}>
