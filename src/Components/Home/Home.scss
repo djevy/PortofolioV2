@@ -1,0 +1,14 @@
+#Home {
+    #ProfileContainer {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        margin-left: auto;
+        #ProfilePic {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}

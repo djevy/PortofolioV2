@@ -1,5 +1,7 @@
 import "./Projects.scss";
 import { Card } from "antd";
+import  map  from "../Media/map.svg"
+import addressBook from "../Media/addressBook.svg"
 
 export const Projects = () => {
   const { Meta } = Card;
@@ -9,13 +11,16 @@ export const Projects = () => {
       <p>Here are some recent projects I have worked on</p>
       <div id="grid">
         <Card
-        id="Gazetteer"
+          id="Gazetteer"
           hoverable
           cover={
-            <img
-              alt="example"
-              src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-            />
+            <a href="https://gazetteer.darrenrevans.co.uk/">
+              <img
+                alt="Icon used for Gazetteer website logo"
+                src={map}
+                id="map"
+              />
+            </a>
           }
         >
           <Meta
@@ -23,14 +28,18 @@ export const Projects = () => {
             description="Gazetteer is a mobile first app that provides live country information, weather and exchange rates. It uses technology including; ajax, leaflet.js, multiple api's."
           />
         </Card>
+
         <Card
-        id="CompanyDirectory"
+          id="CompanyDirectory"
           hoverable
           cover={
-            <img
-              alt="example"
-              src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-            />
+            <a href="https://companydirectory.darrenrevans.co.uk/">
+              <img
+                alt="Icon used for company directory website logo"
+                src={addressBook}
+                id="book"
+              />
+            </a>
           }
         >
           <Meta
