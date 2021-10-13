@@ -6,9 +6,11 @@ import "./Home.scss";
 export const Home = () => {
   return (
     <div id="Home">
-      <h2>Hello there!</h2>
-      <h2>I'm Darren Evans</h2>
-      <h3>I am a self-taught Web Developer from Kent, England.</h3>
+      <div id="welcome">
+        <h2>Hello there!</h2>
+        <h2>I'm Darren Evans</h2>
+        <h3>I am a self-taught Web Developer from Kent, England.</h3>
+      </div>
       <div id="ProfileContainer">
         <img src={ProfilePic} alt="A profile pic" id="ProfilePic" />
       </div>

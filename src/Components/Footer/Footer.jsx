@@ -22,10 +22,10 @@ export const Footer = () => {
         </h3>
       </div>
       <div id="footerLogos">
-        <a href="https://www.linkedin.com/in/darren-evans-061685157/">
+        <a href="https://github.com/djevy/">
           <GithubOutlined />
         </a>
-        <a href="https://github.com/djevy/">
+        <a href="https://www.linkedin.com/in/darren-evans-061685157/">
           <LinkedinFilled />
         </a>
         <a href="mailto:contact@darrenrevans.co.uk">
