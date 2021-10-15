@@ -9,7 +9,7 @@ export const Home = () => {
       <div id="welcome">
         <h2>Hello there!</h2>
         <h2>I'm Darren Evans</h2>
-        <h3>I am a self-taught Web Developer from Kent, England.</h3>
+        <p>I am a self-taught Web Developer based in Kent, England.</p>
       </div>
       <div id="ProfileContainer">
         <img src={ProfilePic} alt="A profile pic" id="ProfilePic" />

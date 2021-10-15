@@ -3,8 +3,6 @@
     display: none;
   }
 
-
-
   #mobile {
     padding-bottom: 50px;
     .navBar {
@@ -68,6 +66,7 @@
       text-transform: uppercase;
       font-weight: bold;
       margin: 0px;
+      font-size: 1em;
     }
 
     .menuNav li:first-child {
@@ -101,6 +100,7 @@
           text-decoration: none;
           margin: 0px;
           font-size: 20px;
+          cursor: pointer;
         }
       }
     }

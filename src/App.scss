@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
-  font-family: 'Nunito', 'Courier New', Courier, monospace;
+  font-family: "Nunito", "Courier New", Courier, monospace;
 }
 p {
   font-size: 1.25em;
@@ -10,13 +10,72 @@ p {
   background-color: #000;
   color: #fff;
 
-#layout {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  margin: 50px auto;
-  padding-bottom: 50px;
-  max-width: 1100px;
+  #layout {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    max-width: 1100px;
+  }
 }
 
+.ant-modal-root {
+  margin: 0;
+  padding: 0;
+  .ant-modal-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: #00000073;
+  }
+  .ant-modal-wrap {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    outline: 0;
+    .ant-modal-content {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+      pointer-events: auto;
+      padding: 20px;
+      .ant-modal-close {
+        margin-left: auto;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        div {
+          margin: 10px;
+          label {
+            margin-right: 5px;
+            width: 100px;
+          }
+          input, textarea {
+            border: dashed black 2px;
+          }
+        }
+      }
+    }
+  }
 }
