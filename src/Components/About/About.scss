@@ -1,12 +1,13 @@
 #skills {
-  margin-bottom: 50px;
+  margin: 50px auto;
   #grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     .skills {
       width: 100px;
       height: 100px;
-      margin: 10px auto;
+      margin: 20px auto;
       padding: 15px;
       border: solid white;
       display: flex;
@@ -32,4 +33,21 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
+}
+.Tooltip {
+  color: white;
+  font-weight: bold;
+  width: 100px;
+
+  margin: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.rc-tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
 }

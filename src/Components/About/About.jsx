@@ -1,8 +1,14 @@
 import "./About.scss";
-import { FaHtml5, FaReact, FaCss3, FaJs,FaGitAlt, FaPhp  } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaReact,
+  FaCss3,
+  FaJs,
+  FaGitAlt,
+  FaPhp,
+} from "react-icons/fa";
 import { DiMysql, DiJqueryLogo } from "react-icons/di";
-import { Tooltip } from 'antd';
-
+import Tooltip from "rc-tooltip";
 export const About = () => {
   return (
     <section id="about">
@@ -33,18 +39,105 @@ export const About = () => {
       </div>
 
       <div id="skills">
-      <h2>My Skillset</h2>
-<div id="grid">
-            <Tooltip title="JavaScript" trigger="hover" className="skills"><FaJs className="icon"/></Tooltip>
-            <Tooltip title="HTML-5" trigger="hover" className="skills"><FaHtml5 className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><FaCss3 className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><FaPhp className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><FaReact className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><DiMysql className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><FaGitAlt className="icon"/></Tooltip>
-            <Tooltip title="Title" trigger="hover" className="skills"><DiJqueryLogo className="icon"/></Tooltip>
-</div>
-
+        <h2>My Skillset</h2>
+        <div id="grid">
+          <Tooltip
+            overlay={<div className="Tooltip">JavaScript</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaJs className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">HTML-5</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaHtml5 className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">CSS3</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaCss3 className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">PHP</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaPhp className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">React</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaReact className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">MySQL</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <DiMysql className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">Git</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <FaGitAlt className="icon" />
+            </div>
+          </Tooltip>
+          <Tooltip
+            overlay={<div className="Tooltip">jQuery</div>}
+            trigger="hover"
+            className="skills"
+            placement="top"
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0.1}
+          >
+            <div>
+              <DiJqueryLogo className="icon" />
+            </div>
+          </Tooltip>
+        </div>
       </div>
     </section>
   );
