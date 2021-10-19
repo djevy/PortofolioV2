@@ -1,0 +1,40 @@
+#contact {
+  #contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+      label {
+        width: 120px;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+      textarea {
+        min-height: 150px;
+      }
+      input,
+      textarea {
+        min-width: 200px;
+        width: 50%;
+        font-size: 1.25em;
+      }
+    }
+    #submitBtn {
+      min-width: 200px;
+      width: 75%;
+      margin: auto;
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+  }
+  #thankYou {
+    margin-top: 30px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+}

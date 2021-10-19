@@ -7,6 +7,7 @@ import { About } from "./Components/About/About.jsx";
 import { Footer } from "./Components/Footer/Footer.jsx";
 import { Projects } from "./Components/Projects/Projects.jsx";
 import { Resume } from "./Components/Resume/Resume.jsx";
+import { Contact } from "./Components/Contact/Contact.jsx";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/resume">
               <Resume />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
             <Route path="/">
               <Home />

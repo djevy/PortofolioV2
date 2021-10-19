@@ -1,7 +1,7 @@
 import "./Resume.scss";
 import React from "react";
 import { saveAs } from "file-saver";
-import CV from "../Media/Darren Evans CV.pdf";
+import CV from "../Media/Darren Evans CV-2021-October.pdf";
 
 export const Resume = () => {
   const saveFile = () => {
@@ -23,11 +23,11 @@ export const Resume = () => {
           <ul>
             <li>Worked on the development of a Learning Management System.</li>
             <li>
-              Translated designs and wire frames into a highly responsive user
+              Translated designs and wireframes into a highly responsive user
               interface and reusable components using React.js.
             </li>
             <li>
-              Used JIRA as the as a task tracking system to maintain the history
+              Used JIRA as a task tracking system to maintain the history
               of bugs/issues on an everyday basis.
             </li>
             <li>
